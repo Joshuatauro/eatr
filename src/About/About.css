@@ -1,0 +1,43 @@
+.about{
+  width: 100%;
+
+  padding: 50px 0;
+}
+
+.about-container{
+  width: 80%;
+  margin: auto;
+  max-width: 1500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-content{
+  padding: 40px 0;
+}
+
+.about-image{
+  width: 100%;
+}
+
+.about-image img{
+  width: 100%;
+}
+
+.about.red{
+  font-size: 50px;
+}
+
+@media only screen and (min-width: 800px){
+  .about-container{
+    flex-direction: row;
+  }
+
+  .about-content{
+    width: 90%;
+    padding-right: 20px;
+  }
+}

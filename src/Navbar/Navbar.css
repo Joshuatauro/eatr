@@ -1,0 +1,172 @@
+*{
+  padding: 0;
+  border: 0;
+  margin: 0;
+
+  list-style-type: none;
+  text-decoration: none;
+
+  font-family: 'montserrat';
+
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+
+  height: 60px;
+
+  transition: 0.2s ease-in-out;
+}
+
+.navbar.white{
+  background-color: white;
+  color: black;
+}
+
+.navbar-container{
+  width: 80%;
+  max-width: 1500px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo{
+  color: white;
+
+  transition: 0.2s ease-in-out;
+}
+
+.navbar.white .navbar-logo{
+  color: black;
+}
+
+.nav-burger{
+  height: 60px;
+  width: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 99999;
+}
+
+.bar-1,
+.bar-3{
+  width: 20px;
+  height: 3px;
+  background-color: white;
+
+  transition: 0.5s ease-in-out;
+}
+
+.navbar.white .bar-1,
+.navbar.white .bar-2,
+.navbar.white .bar-3{
+  background-color: black;
+}
+
+.bar-2{
+  width: 40px;
+  height: 3px;
+  background-color: white;
+
+  margin: 5px 0;
+
+  transition: 0.5s ease-in-out;
+}
+
+.nav-burger.open .bar-1{
+  transform: rotate(-45deg) translate(5px , 6px);
+  background-color: black;
+}
+
+.nav-burger.open .bar-2{
+  transform: rotate(45deg);
+  background-color: black;
+}
+
+.nav-burger.open .bar-3{
+  transform: rotate(-45deg) translate(-5px , -5px);
+  background-color: black;
+}
+
+.navlinks{
+  position: absolute;
+  left: 0;
+  top: 0px;
+
+  width: 100%;
+  height: calc(100vh - 80px);
+  /* height: 100vh; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 80px;
+  
+  background: white;
+
+  transition: 1s ease-in-out;
+}
+
+.nav-item{
+  margin: 20px 0;
+  background-color: transparent;
+}
+
+.close{
+  top: -100vh;
+}
+
+.red{
+  color: red;
+  font-size: 20px;
+  /* font-family: 'grandstander'; */
+}
+
+
+
+  
+
+
+@media only screen and (min-width: 800px){
+  .navbar-container{
+    height: 100%;
+    color: white;
+  }
+  .navbar.white .navbar-container{
+    color: black;
+  }
+  .navlinks{
+    position: unset;
+    width: unset;
+    height: unset;
+
+    flex-direction: row;
+    
+    background: transparent;
+  }
+
+  .nav-burger{
+    display: none;
+  }
+
+  .nav-item{
+    margin: 0 20px;
+  }
+
+  .close{
+    padding: 0;
+  }
+
+
+}
+

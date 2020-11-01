@@ -1,0 +1,93 @@
+.review{
+  width: 100%;
+  background-image: url(./bg-rev.jpg);
+  background-size: cover;
+  background-position: center ;
+}
+
+.review-container{
+  width: 80%;
+  margin: auto;
+  max-width: 1500px;
+
+  padding: 40px 0 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.review.red{
+  background-image: none;
+  font-size: 50px;
+}
+
+.review-card-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  padding: 20px 0 ;
+
+}
+
+.review-card{
+  width: 100%;
+  
+
+  background-color: white;
+
+  margin: 20px 0;
+  padding: 20px 0;
+
+  /* border-radius: 20px; */
+}
+
+.review-card-inner{
+  width: 90%;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.review-card-inner h3{
+  width: 80%;
+  text-align: right;
+
+  font-family: 'grandstander';
+}
+
+.review-card-inner img{
+
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.review-card-inner p{
+  padding: 10px 0;
+  font-style: italic;
+}
+
+.fa-star{
+  padding: 10px 0;
+  color: goldenrod;
+}
+
+@media only screen and (min-width: 900px){
+  .review-card-container{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
